@@ -10,13 +10,12 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="script.js"></script>
     <title>Menú Hamburguesa</title>
-    <script src=""></script>
 </head>
 
 <body>
-
     <header>
       <nav class="navbar navbar-expand-lg bg-white" style="margin-bottom: 18px;">
           <div class="container-fluid">
@@ -38,7 +37,7 @@
                   <a class="nav-link" href="#colaboradores">Colaboradores</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Recursos</a>
+                  <a class="nav-link" href="#recursos">Recursos</a>
                 </li>
               </ul>
               <form class="d-flex" role="search">
@@ -52,12 +51,13 @@
 
     <section id="hero">
       <h1><br>Colaborá en proyectos internacionales <br></h1>
-      <form action="#">
+      <form action="sesion.html">
           <button>Empezá ya</button>
       </form>
     </section>
 
     <main>
+
       <section id="proyectos">
         <div class="container">
             <h2>Proyectos</h2>
@@ -122,6 +122,82 @@
           </div>
         </div>
       </section>
+
+      <section id="recursos">
+        <div class="container mt-5">
+          <h2 class="text-center">Recursos</h2>
+  
+          <!-- Botones de filtro -->
+          <div class="btn-group mb-3">
+              <button class="btn btn-primary" onclick="filterResources('papers')">Papers</button>
+              <button class="btn btn-primary" onclick="filterResources('revistas')">Revistas</button>
+              <button class="btn btn-primary" onclick="filterResources('libros')">Libros</button>
+          </div>
+  
+          <!-- Contenedor de recursos con alineación central -->
+          <div class="text-center">
+              <!-- Recursos de Papers -->
+              <div class="resource" id="papers">
+                  <!-- Recursos de Papers -->
+                  <div class="row">
+                      <div class="col-md-4">
+                          <!-- Portada con sombreado -->
+                          <img src="img/paper1.jpg" alt="Portada del Paper 1" class="img-fluid">
+                      </div>
+                      <div class="col-md-8">
+                          <!-- Datos del Paper -->
+                          <h3>Caracterización de modelos de física teórica</h3>
+                          <p><strong>Autor(es):</strong> Pereyra Alex, Gutierrez Juliana</p>
+                          <p><strong>Descripción:</strong> Una breve descripción del paper 1.</p>
+                          <button>Leer</button>
+                      </div>
+                  </div>
+                  <!-- Agrega más papers aquí -->
+              </div>
+  
+              <div class="resource" id="revistas">
+                  <!-- Recursos de Revistas -->
+                  <div class="row">
+                      <div class="col-md-4">
+                          <!-- Portada con sombreado -->
+                          <img src="img/revista1.jpg" alt="Portada de la Revista 1" class="img-fluid">
+                      </div>
+                      <div class="col-md-8">
+                          <!-- Datos de la Revista -->
+                          <h3>Título de la Revista 1</h3>
+                          <p><strong>Autor(es):</strong> Autor 3, Autor 4</p>
+                          <p><strong>Descripción:</strong> Una breve descripción de la revista 1.</p>
+                          <button>Leer</button>
+                      </div>
+                  </div>
+                  <!-- Agrega más revistas aquí -->
+              </div>
+  
+              <div class="resource" id="libros">
+                  <!-- Recursos de Libros -->
+                  <div class="row">
+                      <div class="col-md-4">
+                          <!-- Portada con sombreado -->
+                          <img src="img/libro1.png" alt="Portada del Libro 1" class="img-fluid">
+                      </div>
+                      <div class="col-md-8">
+                          <!-- Datos del Libro -->
+                          <h3>Título del Libro 1</h3>
+                          <p><strong>Autor(es):</strong> Autor 5, Autor 6</p>
+                          <p><strong>Descripción:</strong> Una breve descripción del libro 1.</p>
+                          <button>Leer</button>
+                      </div>
+                  </div>
+                  <!-- Agrega más libros aquí -->
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        
+      </footer>
+
     </main>
 
 </body>
