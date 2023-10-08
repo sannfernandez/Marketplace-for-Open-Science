@@ -128,10 +128,20 @@ button:hover {
 
 #colaboradores .container {
     padding: 150px 12px; 
+    align-items: center;
+}
+
+#colaboradores h2{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 75px;
+    font-size: 3.2em;
 }
 
 .carousel-caption {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .profile-pic {
