@@ -33,6 +33,13 @@ button:hover {
     background-color: cadetblue;
 }
 
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento {color:blueviolet;}
+
 #hero {
     display: flex;
     align-items: center;
@@ -60,4 +67,178 @@ button:hover {
     font-size: 1.75em;
 }
 
+#somos-proya .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#proyectos {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#proyectos .container {
+    padding: 150px 0px;
+}
+
+#proyectos h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#proyectos p {
+    display: none;
+}
+
+#proyectos .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/front-end.jpg");
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/full-stack.jpg");
+}
+
+.carta:last-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/python.jpg");
+}
+
+#colaboradores .container {
+    padding: 150px 12px; 
+}
+
+.carousel-caption {
+    margin-top: 50px;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.description {
+    font-size: 18px;
+}
+
+.slide {
+    display: flex; 
+    align-items: center; 
+}
+
+@media (min-width: 720px) {
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #somos-proya .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-proya .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #somos-proya h2 {
+        font-size: 4em;
+    }
+
+    #somos-proya .img-container {
+        background-image: url(img/somos-proya.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #proyectos .programas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #proyectos p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #proyectos h3 {
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    #proyectos .carta {
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(50, 50, 50, 0.5);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        margin: 15px;
+    }
+
+    .carta:first-child {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("img/front-end-cropped.jpg");
+    }
+    
+    .carta:nth-child(2) {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("img/full-stack-cropped.jpg");
+    }
+    
+    .carta:last-child {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("img/python-cropped.jpg");
+    }
+
+    #colaboradores .container {
+        text-align: initial;
+    }
+}
 

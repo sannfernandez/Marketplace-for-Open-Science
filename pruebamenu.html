@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylemenu.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <title>Menú Hamburguesa</title>
     <script src=""></script>
@@ -26,13 +30,13 @@
                   <a class="nav-link active" aria-current="page" href="sesion.html">Iniciar sesion</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Proyectos</a>
+                  <a class="nav-link" href="#proyectos">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#colaboradores">Colaboradores</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Recursos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Colaboradores</a>
                 </li>
               </ul>
               <form class="d-flex" role="search">
@@ -43,53 +47,82 @@
           </div>
         </nav>
     </header> 
+
     <section id="hero">
       <h1><br>Colaborá en proyectos internacionales <br></h1>
       <form action="#">
           <button>Empezá ya</button>
       </form>
     </section>
+
     <main>
-      <div class="container">
-        <div class="row" style="margin-top: auto;">
-          <div class="col-sm"  style="margin-bottom: 18px;">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Hipotesis matematico de antiderivadas</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Por Santiago</h6>
-                <button type="button" class="btn btn-primary btn-sm">#python</button>
-                <button type="button" class="btn btn-primary btn-sm">#nodejs</button>
-                <button type="button" class="btn btn-primary btn-sm">#dev</button>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" type="button" class="btn btn-light">Leer</a>
-                <a href="#"  type="button" class="btn btn-outline-secondary">Colaborá</a>
-              </div>
+      <section id="proyectos">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="proyectos">
+                <div class="carta">
+                    <h3>Programación Front-End</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consectetur incidunt error ducimus aut numquam fugit odit laudantium unde earum maiores cumque ipsa, nulla nobis itaque quis quisquam ea delectus?</p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Programación Full-Stack</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Magni unde atque, consequatur molestiae, placeat illum nam facilis soluta aperiam obcaecati odit nulla sed, eveniet impedit laudantium vitae quasi enim laborum!</p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Programación con Python</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto blanditiis, nostrum repellat obcaecati, libero ex odio veniam, sit inventore aut voluptatem consequuntur rem expedita quis culpa vel. Vero, nulla harum.</p>
+                    <button>+ Info</button>
+                </div>
             </div>
-          </div>
-          <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+        </div>
+      </section>
+
+      <section id="colaboradores">
+        <div class="container">
+          <h2>Colaboradores</h2>
+          <div id="carouselExample" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                  <!-- Diapositiva 1 -->
+                  <div class="carousel-item active">
+                      <img class="d-block mx-auto profile-pic" src="img/persona 1.jpeg" alt="Persona 1">
+                      <div class="carousel-caption">
+                          <h3>Máximo</h3>
+                          <p>Bioquímico</p>
+                      </div>
+                  </div>
+                  <!-- Diapositiva 2 -->
+                  <div class="carousel-item">
+                      <img class="d-block mx-auto profile-pic" src="img/persona2.jpeg" alt="Persona 2">
+                      <div class="carousel-caption">
+                          <h3>Flora</h3>
+                          <p>Física</p>
+                      </div>
+                  </div>
+                  <!-- Diapositiva 3 -->
+                  <div class="carousel-item">
+                      <img class="d-block mx-auto profile-pic" src="img/persona3.jpeg" alt="Persona 3">
+                      <div class="carousel-caption">
+                          <h3>Alex</h3>
+                          <p>Geólogo</p>
+                      </div>
+                  </div>
               </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
+              <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Siguiente</span>
+              </a>
           </div>
         </div>
-      </div>
+      </section>
+      
+
+
     </main>
 </body>
 </html>
