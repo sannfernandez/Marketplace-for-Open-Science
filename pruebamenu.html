@@ -20,36 +20,92 @@
 
 <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-white" style="margin-bottom: 18px;">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="img/logo.jpeg" width="80" height="80" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="sesion.html">Iniciar sesion</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#proyectos">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#colaboradores">Colaboradores</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#recursos">Recursos</a>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-light" type="submit">Buscar</button>
-              </form>
+      <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.jpeg" width="80" height="80" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="sesion.html" data-bs-toggle="modal" data-bs-target="#exampleModal">Iniciar sesion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Colaboradores</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-light" type="submit">Buscar</button>
+            </form>
+          </div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Inicie sesión</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                      <label for="validationCustomUsername" class="form-label">Username</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                          Please enter a username.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="validationCustom03" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="validationCustom03" required>
+                      <div class="invalid-feedback">
+                        Please enter a password.
+                      </div>
+                    </div>
+                    <a href="" class="card-link">Olvidé mi usuario</a>
+                    <a href="" class="card-link">Olvidé mi contraseña</a>
+                    <div class="modal-footer">
+
+                        <button class="btn btn-primary" type="submit">Log in</button>
+                        <button class="btn btn-secondary">Register</button>
+
+                    </div>
+                  </form>
+                </div>
+                    <script>
+                      (() => {
+                      'use strict'
+                      const forms = document.querySelectorAll('.needs-validation')
+                      Array.from(forms).forEach(form => {
+                        form.addEventListener('submit', event => {
+                          if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                          }
+                          form.classList.add('was-validated')
+                        }, false)
+                      })
+                    })()
+                </script>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-        </nav>
+        </div>
+      </nav>
     </header> 
 
     <section id="hero">
